@@ -32,15 +32,22 @@ python detect_and_genfea.py mode model [options]
         --faces_dir   人脸图片及特征文件所在目录
 
 【人脸检索】库中是否含有给定图片中的人
+
         '''
         SEARCH ./facenet/pretrained_models/20180402-114759 --faces_dir ./testdata/output/test --search_image ./testdata/raw/unknown/zark7.jpg
         '''
+        
         其中
+        
         --faces_dir   人脸图片及特征文件所在目录，是本程序生成的人脸特征库目录，里面必须包含face_fea.h5文件和相应的子目录人脸
+        
         --search_image 待搜索的图片,本程序仅仅探测一个人脸
 
 【人脸比对】可以找出两张图片中所有相似的人脸对，给定距离阈值theadhold = 1.11。
+
         '''
         VERIFY ./facenet/pretrained_models/20180402-114759 --verify_images ./testdata/raw/unknown/z2.jpg ./testdata/raw/unknown/z3.jpg
         '''
+        
         --verify_images 待匹配人脸的两张图片，均可含有多张人脸
+        
