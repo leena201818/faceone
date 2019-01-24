@@ -33,6 +33,3 @@ python detect_and_genfea.py mode model [options]
         VERIFY ./facenet/pretrained_models/20180402-114759 --verify_images ./testdata/raw/unknown/z2.jpg ./testdata/raw/unknown/z3.jpg
         '''
         --verify_images 待匹配人脸的两张图片，均可含有多张人脸
-
-
-
