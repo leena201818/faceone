@@ -1,6 +1,6 @@
 # faceone
 
-本项目参照并利用facenet模型构建，实现人脸探测、人脸特征库构建、人脸检索、人脸比对等功能。
+本项目参照并利用facenet模型构建，实现人脸探测、人脸特征库构建、人脸检索、人脸比对等功能。人脸剪切并对齐采用mtcnn，在目录faceone/facenet/align/align_dataset_mtcnn.py
 
 python detect_and_genfea.py mode model [options]
 
